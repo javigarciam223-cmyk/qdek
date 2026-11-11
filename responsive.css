@@ -1,0 +1,36 @@
+@media (max-width:800px) {
+  .scene { padding:110px 7vw 90px; }
+  .split-scene { flex-direction:column; justify-content:center; align-items:flex-start; gap:45px; }
+  .visual-card { width:min(75vw,390px); align-self:center; }
+  .photo-grid { grid-template-columns:1fr 1fr; }
+  .photo-large { grid-column:span 2; grid-row:auto; }
+  .photo-large img { height:360px; }
+  .photo-card img { height:210px; }
+  .reason-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:520px) {
+  .topbar { padding:18px 6vw; }
+  .topbar-note { display:none; }
+  .scene { padding:105px 6vw 90px; }
+  .hero-title { font-size:clamp(4.7rem,19vw,7rem); }
+  .display-title { font-size:clamp(3.4rem,14vw,5rem); }
+  .hero-subtitle { font-size:.86rem; }
+  .photo-grid { gap:13px; }
+  .photo-large img { height:290px; }
+  .photo-card img { height:155px; }
+  .photo-card { padding:7px 7px 13px; }
+  .photo-card figcaption b { font-size:1.1rem; }
+  .reason-grid { gap:9px; }
+  .reason-card { padding:16px; min-height:165px; }
+  .reason-card b { font-size:1.35rem; }
+  .timeline { padding-left:25px; }
+  .timeline-dot { left:-30px; }
+  .deizy-letter { padding:30px 22px; }
+  .deizy-letter p:not(.eyebrow) { font-size:.88rem; }
+  .future-list p { font-size:1.25rem; }
+  .scene-nav { right:14px; bottom:13px; }
+  .micro-note { font-size:.46rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; }
+}
